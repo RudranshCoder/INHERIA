@@ -1,0 +1,448 @@
+[
+  {
+    "page": 1,
+    "title": "INHERIA \u00b7 Product documentation",
+    "bottom": 287.99,
+    "items": [
+      {
+        "top": 715.89,
+        "bottom": 666.39,
+        "height": 49.5
+      },
+      {
+        "top": 661.39,
+        "bottom": 586.99,
+        "height": 74.4
+      },
+      {
+        "top": 581.99,
+        "bottom": 350.19,
+        "height": 231.8
+      },
+      {
+        "top": 345.19,
+        "bottom": 331.59,
+        "height": 13.6
+      },
+      {
+        "top": 326.59,
+        "bottom": 292.99,
+        "height": 33.6
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "title": "Product workflow and user responsibilities",
+    "bottom": 88.69,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 517.89,
+        "height": 170
+      },
+      {
+        "top": 512.89,
+        "bottom": 202.89,
+        "height": 310.0
+      },
+      {
+        "top": 197.89,
+        "bottom": 109.89,
+        "height": 88.0
+      },
+      {
+        "top": 104.89,
+        "bottom": 93.69,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "title": "Architecture and infrastructure",
+    "bottom": 135.09,
+    "items": [
+      {
+        "top": 715.89,
+        "bottom": 450.89,
+        "height": 265
+      },
+      {
+        "top": 445.89,
+        "bottom": 194.89,
+        "height": 251.0
+      },
+      {
+        "top": 189.89,
+        "bottom": 156.29,
+        "height": 33.6
+      },
+      {
+        "top": 151.29,
+        "bottom": 140.09,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "title": "Data model and API contracts",
+    "bottom": 120.99,
+    "items": [
+      {
+        "top": 715.89,
+        "bottom": 502.49,
+        "height": 213.4
+      },
+      {
+        "top": 497.49,
+        "bottom": 480.99,
+        "height": 16.5
+      },
+      {
+        "top": 475.99,
+        "bottom": 262.59,
+        "height": 213.4
+      },
+      {
+        "top": 257.59,
+        "bottom": 169.59,
+        "height": 88.0
+      },
+      {
+        "top": 164.59,
+        "bottom": 142.19,
+        "height": 22.4
+      },
+      {
+        "top": 137.19,
+        "bottom": 125.99,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "title": "Permissions, privacy and responsible design",
+    "bottom": 158.79,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 340.29,
+        "height": 347.6
+      },
+      {
+        "top": 335.29,
+        "bottom": 318.79,
+        "height": 16.5
+      },
+      {
+        "top": 313.79,
+        "bottom": 272.99,
+        "height": 40.8
+      },
+      {
+        "top": 267.99,
+        "bottom": 179.99,
+        "height": 88.0
+      },
+      {
+        "top": 174.99,
+        "bottom": 163.79,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "title": "Evidence lifecycle and recoverable processing",
+    "bottom": 100.49,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 509.89,
+        "height": 178
+      },
+      {
+        "top": 504.89,
+        "bottom": 242.09,
+        "height": 262.8
+      },
+      {
+        "top": 237.09,
+        "bottom": 149.09,
+        "height": 88.0
+      },
+      {
+        "top": 144.09,
+        "bottom": 121.69,
+        "height": 22.4
+      },
+      {
+        "top": 116.69,
+        "bottom": 105.49,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "title": "Installation and configuration",
+    "bottom": 113.39,
+    "items": [
+      {
+        "top": 715.89,
+        "bottom": 688.69,
+        "height": 27.2
+      },
+      {
+        "top": 683.69,
+        "bottom": 568.49,
+        "height": 115.2
+      },
+      {
+        "top": 563.49,
+        "bottom": 461.89,
+        "height": 101.6
+      },
+      {
+        "top": 456.89,
+        "bottom": 215.49,
+        "height": 241.4
+      },
+      {
+        "top": 210.49,
+        "bottom": 193.99,
+        "height": 16.5
+      },
+      {
+        "top": 188.99,
+        "bottom": 134.59,
+        "height": 54.4
+      },
+      {
+        "top": 129.59,
+        "bottom": 118.39,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "title": "Operating and troubleshooting guide",
+    "bottom": 164.89,
+    "items": [
+      {
+        "top": 715.89,
+        "bottom": 427.29,
+        "height": 288.6
+      },
+      {
+        "top": 422.29,
+        "bottom": 405.79,
+        "height": 16.5
+      },
+      {
+        "top": 400.79,
+        "bottom": 346.39,
+        "height": 54.4
+      },
+      {
+        "top": 341.39,
+        "bottom": 266.99,
+        "height": 74.4
+      },
+      {
+        "top": 261.99,
+        "bottom": 245.49,
+        "height": 16.5
+      },
+      {
+        "top": 240.49,
+        "bottom": 186.09,
+        "height": 54.4
+      },
+      {
+        "top": 181.09,
+        "bottom": 169.89,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "title": "Quality assurance and known limitations",
+    "bottom": 186.69,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 462.69,
+        "height": 225.2
+      },
+      {
+        "top": 457.69,
+        "bottom": 441.19,
+        "height": 16.5
+      },
+      {
+        "top": 436.19,
+        "bottom": 381.79,
+        "height": 54.4
+      },
+      {
+        "top": 376.79,
+        "bottom": 360.29,
+        "height": 16.5
+      },
+      {
+        "top": 355.29,
+        "bottom": 300.89,
+        "height": 54.4
+      },
+      {
+        "top": 295.89,
+        "bottom": 207.89,
+        "height": 88.0
+      },
+      {
+        "top": 202.89,
+        "bottom": 191.69,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "title": "Development roadmap and delivery order",
+    "bottom": 179.89,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 638.39,
+        "height": 49.5
+      },
+      {
+        "top": 633.39,
+        "bottom": 374.99,
+        "height": 258.4
+      },
+      {
+        "top": 369.99,
+        "bottom": 353.49,
+        "height": 16.5
+      },
+      {
+        "top": 348.49,
+        "bottom": 294.09,
+        "height": 54.4
+      },
+      {
+        "top": 289.09,
+        "bottom": 201.09,
+        "height": 88.0
+      },
+      {
+        "top": 196.09,
+        "bottom": 184.89,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "title": "Roadmap acceptance and release governance",
+    "bottom": 184.99,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 380.09,
+        "height": 307.8
+      },
+      {
+        "top": 375.09,
+        "bottom": 358.59,
+        "height": 16.5
+      },
+      {
+        "top": 353.59,
+        "bottom": 285.59,
+        "height": 68.0
+      },
+      {
+        "top": 280.59,
+        "bottom": 206.19,
+        "height": 74.4
+      },
+      {
+        "top": 201.19,
+        "bottom": 189.99,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "title": "Future scope with practical differentiation",
+    "bottom": 236.19,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 417.69,
+        "height": 270.2
+      },
+      {
+        "top": 412.69,
+        "bottom": 396.19,
+        "height": 16.5
+      },
+      {
+        "top": 391.19,
+        "bottom": 350.39,
+        "height": 40.8
+      },
+      {
+        "top": 345.39,
+        "bottom": 257.39,
+        "height": 88.0
+      },
+      {
+        "top": 252.39,
+        "bottom": 241.19,
+        "height": 11.2
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "title": "Reference index and maintenance contract",
+    "bottom": 151.59,
+    "items": [
+      {
+        "top": 687.89,
+        "bottom": 369.09,
+        "height": 318.8
+      },
+      {
+        "top": 364.09,
+        "bottom": 276.09,
+        "height": 88.0
+      },
+      {
+        "top": 271.09,
+        "bottom": 254.59,
+        "height": 16.5
+      },
+      {
+        "top": 249.59,
+        "bottom": 195.19,
+        "height": 54.4
+      },
+      {
+        "top": 190.19,
+        "bottom": 156.59,
+        "height": 33.6
+      }
+    ]
+  }
+]

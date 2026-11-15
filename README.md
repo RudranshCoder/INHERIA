@@ -4,7 +4,7 @@
 
 INHERIA helps a technical team transfer project knowledge and responsibilities when someone leaves or changes roles. It brings authorised documents and repository activity into one workspace, reconstructs source-linked knowledge, highlights uncertainty, supports human review and gives the incoming person a practical continuation plan.
 
-**[Open the live product](https://inheria.onrender.com)** · **[Judge scenario guide](https://inheria.onrender.com/demo)** · **[API documentation](API_CONTRACT.md)** · **[Verification evidence](docs/verification.md)**
+**[Open the live product](https://inheria.onrender.com)** · **[Judge scenario guide](https://inheria.onrender.com/demo)** · **[Product documentation](docs/report/README.md)** · **[API documentation](API_CONTRACT.md)** · **[Verification evidence](docs/verification.md)**
 
 > **The journey:** Connect → Reconstruct → Verify → Review → Handover → Accept & Validate → Continue
 >
@@ -100,6 +100,18 @@ Real teammates use separate accounts in the same organisation and project. Sourc
 
 *Completion is recorded across the workspace, with ownership, version history and participant contributions.*
 
+Before closure, the Handover page shows current acceptance, supervisor review,
+evidence coverage and unresolved checks with links to the relevant work. Missing
+or failed readiness disables **Close transition**; the backend checks again.
+**Refresh readiness** and **Team → Refresh access** let users inspect teammate
+updates. Temporary request limits show a cooldown and preserve saved work.
+
+![Current closure checks and links to resolve blocked work](docs/screenshots/12-closure-readiness.png)
+
+*Built local QA case study: accepted responsibilities, supervisor assessments and
+current evidence are shown separately. This screenshot is not a production
+execution record.*
+
 ![Savinay's source-linked continuation plan](docs/screenshots/08-successor-continuation.png)
 
 *The incoming person can find assigned responsibilities and approved procedures, then inspect their citations.*
@@ -174,9 +186,10 @@ The dedicated acceptance run passed **34/34 journeys**. Read the [promise-to-del
 | **Continuation and closure guidance** | Each project calculates its next actor/action; typed recovery checks and owned critical-gap follow-ups make remaining work explicit. |
 | **Permissions and stale evidence** | Membership/source changes recheck current authority; lost evidence prevents readiness and hides restricted derived content. UI approval rejects stale handover versions. |
 | **Real PostgreSQL concurrency verification** | Fifteen cases check simultaneous writes and lock waits. An invitation revocation race was reproduced and fixed by serialising on the project row and reloading ORM state. |
-| **Fresh prose extraction hardening** | Added explicit assigned/passive owners, reverse passive dependencies and more reason phrases. Unconfirmed/historical statements remain uncertain and missing rationale stays missing. Original first-run failures are preserved. |
-| **CI and public proof** | CI supplies ephemeral PostgreSQL 17. Full-suite, extraction and live judge evidence are published with scope, hashes and limitations. |
-| **Documentation and screenshots** | This README explains the complete journey, AI key setup, delivered commitments, reproducible checks and next development stages. |
+| **Fresh prose extraction hardening** | Added explicit assigned/passive owners, reverse passive dependencies and more reason phrases; unconfirmed/historical statements remain uncertain and missing rationale stays missing. Original first-run failures are preserved. |
+| **Judge-input and connector hardening** | Explicit managed/overseen duties, scoped component names, more causal wording, training-example rejection, visible partial-sync warnings, one queued job for concurrent Sync and mobile source-table containment. |
+| **CI and public proof** | CI now supplies ephemeral PostgreSQL 17. Full-suite, extraction and live judge evidence are published with scope, hashes and limitations. |
+| **Documentation and current screenshots** | This README now explains the complete journey, AI key setup, delivered commitments, reproducible checks and next development stages. |
 
 Application fixes are in [`2d48c43`](https://github.com/Gauravwakle96/INHERIA/commit/2d48c435a2de431ac879d92c178cdaa7a03bd8fe); live/CI evidence was recorded in [`f5096a6`](https://github.com/Gauravwakle96/INHERIA/commit/f5096a6fbb2fe8469b6eeade50bb65f0855d2731). Earlier work and actual timestamps remain visible in [Git history](https://github.com/Gauravwakle96/INHERIA/commits/main).
 
@@ -210,6 +223,8 @@ The implemented provider is **Bynara Router**:
 5. Enable **external AI processing for authorised users**, then **Save settings**.
 6. Select **Test saved connection**. After a successful response, ask a question and choose **Low effort** or **High effort**.
 
+
+**API key safety:** Use your own authorised provider key. Never publish API keys in this README, Git history, chat messages or screenshots. Enter keys only in the application’s protected AI settings.
 ![Bynara provider setup with an empty key field](docs/screenshots/11-ai-settings.png)
 
 **Key handling**
@@ -378,7 +393,7 @@ The application does not read Codex's credentials or configuration. Organisation
 
 ## Testing and reliability evidence
 
-**Latest full backend verification: 228 tests passed**, including **15 real PostgreSQL transaction cases**, with **90% line coverage**. [CI run 43531873055](https://github.com/Gauravwakle96/INHERIA/actions/runs/43531873055) passed backend lint/format/tests/dependency audit and frontend lint/typecheck/build/npm audit.
+Latest full backend verification: **239 tests passed**, including **17 real PostgreSQL cases**. The previous coverage run measured **89% line coverage**; the latest run is not a new coverage measurement. [CI run 43612540914](https://github.com/Gauravwakle96/INHERIA/actions/runs/43612540914) passed backend lint/format/tests/dependency audit and frontend lint/typecheck/build/npm audit for the deployed judge-input changes. The exact submitted three-improvement runner also passed **34/34** again on 14 November. Latest judge-input verification is recorded below and in the [hardening evidence](docs/judge-input-hardening.md).
 
 | Test area | Executed evidence |
 | --- | --- |
@@ -387,17 +402,22 @@ The application does not read Codex's credentials or configuration. Organisation
 | Real database concurrency | Separate PostgreSQL sessions and actual lock waits for duplicate acceptance/assignment/closure/approvals, JSON edits, source/access changes and invitation races. |
 | Failure and recovery | Invalid inputs/files, quarantine, conflicting/missing/stale evidence, connector errors/retries, rejected/reopened tasks, interruption/checkpoint resume and process restart. |
 | Live product | New prose upload → four pending exact-cited candidates → review → generated handover; completed/fresh judge entry, refresh, 51 sources/81 claims/92 graph nodes and successor continuation. |
-| Browser / accessibility | Representative 390/768/1440px checks, day/night themes, keyboard/reduced-motion checks and zero automated axe A/AA findings in the recorded bounded runs. |
+| Browser/accessibility | Representative 390/768/1440px checks, day/night themes, keyboard/reduced-motion checks and zero automated axe A/AA findings in the recorded bounded runs. |
+| Final judge recovery checks | Eight focused browser checks passed for premature closure, changed/unavailable evidence, 429 cooldown, exact-three guide, team/source permission refresh and successful/failed background completion. The complete local fresh-to-closed UI journey passed separately in 3.4 minutes. |
 
 **Extraction measurements**
 
-| Run | Precision | Recall | Owner fields | Rationale | Dependency endpoints |
-| --- | --- | --- | --- | --- | --- |
-| Original 60-document internal first run (34 prose cases) | Met submitted thresholds | Met submitted thresholds | – | – | – |
-| 72-document all-prose first run | 94.6% | 88.3% | 84.6% | 75.0% | 83.3% |
-| Same cases after general fixes (known regression cases) | 100% | 98.3% | 92.3% | 100% | 94.4% |
+**Further judge-input checks:** a new 72-case first run exposed owner, rationale,
+dependency and training-example failures; its original report remains published.
+After general fixes, a separate frozen 60-document first run met targets:
+precision 100%, recall 96.2%, owners 95%, rationales 91.7% and dependencies 100%.
+Two misses remain. Labels are internal and implementation-informed. The own public
+repository also completed a live authenticated 40-source import and incremental
+resync with zero new imports. See [judge-input and GitHub evidence](docs/judge-input-hardening.md).
 
-The unchanged original report remains published. These are internally authored labels and tuned regression results, **not independently measured enterprise accuracy**. No independent five-person usability verification is claimed. Automated checks establish the recorded behaviour; human operational competence and source authenticity still require qualified review.
+No independent five-person usability verification is claimed. Automated checks establish the recorded behaviour; human operational competence and source authenticity still require qualified review.
+
+The unchanged original report remains published. These are internally authored labels and tuned regression results, **not independently measured enterprise accuracy**. Human operational competence and source authenticity still require qualified review.
 
 **Run the checks** (from `backend`):
 
@@ -409,10 +429,10 @@ uv run pytest -q tests/test_acceptance_evaluation.py
 uv run pip-audit --local
 ```
 
-Without `INHERIA_TEST_POSTGRES_URL`, the fifteen PostgreSQL tests **skip explicitly**. To run them, set it privately in your shell to an owned loopback PostgreSQL database whose name ends in `_qa`, then:
+Without `INHERIA_TEST_POSTGRES_URL`, the PostgreSQL tests **skip explicitly**. To run them, set it privately in your shell to an owned loopback PostgreSQL database whose name ends in `_qa`, then run:
 
 ```powershell
-uv run pytest -q tests/test_postgres_concurrency.py
+uv run pytest -q tests/test_postgres_concurrency.py tests/test_transfer_budget.py
 ```
 
 The fixture creates and removes only a unique QA schema and rejects remote hosts and database names outside the convention. GitHub CI supplies an ephemeral PostgreSQL 17 service. See [reproduction and original race failure](docs/postgres-and-extraction-hardening.md).
@@ -464,6 +484,7 @@ Cross-company learning, predictive scores, multi-person departure simulations, a
 | [Architecture](docs/architecture.md) | Data flow, schema, trust boundaries, storage and technical decisions. |
 | [API contract](API_CONTRACT.md) / [OpenAPI snapshot](docs/openapi.json) | Routes, request/response behaviour and API access requirements. |
 | [Deployment](docs/deployment.md) | Render/Neon free setup, secret configuration, migrations, health checks and hosting limits. |
+| [Operating guide](docs/operating-guide.md) | Responsible actors, expected failures, recovery, migrations, rollback and release maintenance. |
 | [Judge guide](docs/judge-guide.md) | Scenario, role actions and the source-to-validation journey. |
 | [Feature status](docs/feature-status.md) | Implemented, partial, postponed and unimplemented capabilities. |
 | [Three-improvement acceptance](docs/three-improvements-acceptance.md) | Submitted promises, delivered behaviour, measurable acceptance and scope limits. |
@@ -473,7 +494,10 @@ Cross-company learning, predictive scores, multi-person departure simulations, a
 | [Chat configuration](docs/chat-integration-plan.md) | Provider settings, key isolation, citations/actions and fallback boundaries. |
 | [Completion behaviour](docs/completion-hardening.md) | Case-study copying, continuation, readiness categories and source-change recovery. |
 | [Delivery/submission mapping](docs/round3-delivery.md) | Product/rubric mapping, responsible design and actual-history disclosure. |
-| [Future roadmap](docs/roadmap.md) | Prioritised future stages, user benefit and acceptance criteria. |
+| [Final product acceptance](docs/final-product-readiness.md) | Judge journey, exact three improvements, rubric evidence and remaining submission items. |
+| [Judge-input hardening](docs/judge-input-hardening.md) | Preserved first-run misses, separate holdout, real GitHub sync, duplicate-request and mobile fixes. |
+| [Unaided usability tasks](docs/usability-task-pack.md) | Ready-to-use tasks and actual-observation template; no user-study result is assumed. |
+| [Future roadmap](docs/roadmap.md) | Four prioritised milestones, estimated effort, dependencies, risks, delivery artefacts and measurable release gates. |
 
 **Future priorities:** (1) independently evaluated extraction, (2) verified team identity and permission lifecycle, (3) durable jobs and operational governance. Each stage has measurable exit criteria in the roadmap; planned work is not counted as a finished feature.
 

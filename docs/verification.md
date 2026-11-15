@@ -2,6 +2,98 @@
 
 Historical and current verification results are separated below. Results apply to the implemented MVP in this workspace; they do not certify an enterprise deployment.
 
+## Judge-input, GitHub and duplicate-sync checks — 14 November 2026
+
+Latest full backend suite: **239 passed**, no failures/skips, including **17 real
+PostgreSQL cases**. This run did not collect coverage; the previous measured
+baseline remains 89%. A final uncertainty guard passed 22 targeted boundary tests.
+Exact-three acceptance passed **34/34**. The complete fresh-to-closed local UI
+journey passed in about 203 seconds. Build/typecheck/lint, Python/Node dependency
+audits and staged secret review passed in the recorded scope.
+
+The 72-case challenge's original misses are preserved. General fixes recognise
+more explicit duties and rationale, trim dependency instruction clauses and
+reject training examples. A separate 60-document first run meets submitted
+targets with two disclosed misses. See [input hardening](judge-input-hardening.md).
+
+Real authenticated live GitHub import brought 40 sources into an isolated judge
+workspace; incremental resync added zero new sources. The temporary connection
+and token were revoked. Duplicate enqueue now serialises on the project row;
+the PostgreSQL overlap test confirms one job and one audit record.
+
+The browser run found mobile overflow from an absolutely positioned hidden
+table-header label; fixing its scroll-container positioning passed the connector
+scope/warnings test at 390/768/1440 pixels with bounded axe checks. Repeated local
+QA also filled the unchanged 40-visit capacity, producing an explicit capacity
+error. Only visits in the task-owned local QA database were expired; production
+limits/data were unchanged. The corrected paced/capacity-clean browser rerun
+passed **9/9** for readiness, warnings, source access and job completion/failure.
+
+Human-user observations are still awaited; the [task pack](usability-task-pack.md)
+is preparation, not claimed testing. Free-hosting capacity is finite (latest
+pre-check snapshot roughly 0.51 GB transfer remaining). PDF remains deferred.
+Commands/results, file hashes and initial failures are in
+[upgrade verification](judge-upgrade-verification.json).
+
+Render confirmed application commit `55b11e1a8fc2486b738b920cd4c639481890c5be`
+live and [CI run 43612540914](https://github.com/Gauravwakle96/INHERIA/actions/runs/43612540914)
+passed. A fresh live upload yielded four pending exact-cited candidates, correctly
+handled a passive dependency and rationale, retained missing rationale and
+excluded training/unconfirmed ownership. Authorised review included the claims
+in a generated handover while the incomplete transfer stayed blocked. The
+refreshed browser loaded the new asset without visible errors or desktop overflow.
+A fresh checkout separately passed locked Python/Node install, Alembic upgrade,
+API startup, 13-source judge entry and SPA deep link. See
+[target and clean-install verification](judge-upgrade-target-verification.json).
+
+## Judge experience and closure recovery — 14 November 2026
+
+The Handover page now shows measured acceptance, independent assessment, current
+evidence coverage and blockers before closure. Missing, changed or unavailable
+readiness disables Close; direct links lead to access, sources, practical review
+and required checks. Team has a manual access refresh. The public guide explains
+how to exercise the exact three submitted improvements.
+
+Six focused browser tests passed: completed-role continuation/refresh, fresh
+reconstruction, pre-closure blockers and links, changed/failed readiness with
+retry, request-limit cooldown without immediate query retries, and invitation/
+membership revocation. The full real local UI journey passed from fresh sources
+through reconstruction, evidence inspection, approval, assignment, successor
+acceptance, independent assessment, prerequisite review and closure; completion
+was then inspected across project pages and themes. Build, typecheck/lint and full
+Node dependency audit passed. Exact-three backend acceptance passed 34/34 again.
+
+The final focused browser run passed 8/8: closure blockers, changed/unavailable
+readiness, request-limit cooldown, public exact-three guide in both themes at
+390/768/1440 pixels, external membership/source refresh, source permission
+preservation and successful/failed job completion refresh. Readiness errors expose one recovery control so a second
+refresh button cannot bypass the displayed cooldown. Team access refresh also
+updates the source inventory and membership list.
+
+Commands, result counts and tested file hashes are recorded in
+[judge experience verification](judge-experience-verification.json).
+
+Render confirmed application commit `4fecf31e03d9b8d71e859a09e5d19c0a6e33faaf`
+live on the existing Free service. [CI run 43606135040](https://github.com/Gauravwakle96/INHERIA/actions/runs/43606135040)
+passed both jobs. Live browser checks confirmed the exact-three public guide,
+completed handover readiness (8/8 responsibilities, 11/11 supervisor tasks,
+72/72 current handover records), Team refresh and fresh-entry blockers with
+recovery links. No visible request error or desktop overflow was observed. See
+[live verification](judge-closure-live-verification.json); targeted failure and
+accessibility tests remain the separately recorded local checks.
+
+An initial accelerated full journey reached closure but hit the unchanged
+shared-IP request limit during subsequent rapid navigation and timed out. Query
+retries now avoid terminal/permission/rate errors and 429 responses expose the
+provider cooldown. The test honours the 60-second server budget between heavy
+review/navigation loops; the complete rerun passed in 3.4 minutes. This does not
+establish unlimited throughput. Targeted readiness/error timing uses explicit
+browser fixtures; the full workflow uses the local backend.
+
+The leader confirmed that the Round 2 baseline is allowed. PDF generation remains
+deferred at their request. No unfamiliar-user outcome or participant contribution
+has been invented. See [final product acceptance](final-product-readiness.md).
+
 ## Free-hosting transfer optimisation — 14 November 2026
 
 The Neon project API reported 4.08 GB public network transfer against a 5 GB free allowance, while compute was about 4.2 CU-hours of 100. Existing account data, keys, provider choices and database resources were preserved. The actual Render service health setting was changed from `/api/ready` to `/api/health`; the service remains Free.

@@ -12,7 +12,8 @@ Repository: https://github.com/Gauravwakle96/INHERIA
 Judge login instructions: Select Open judge workspace on the sign-in page. No
 email/password or API key is required. The visitor enters as Rudransh and can
 switch to Gaurav/Savinay within a separate expiring case-study workspace. The default completed mode includes 51 sources, eight accepted responsibilities and eleven reviewed walkthroughs. Try a fresh handover starts the same users with a new unapproved journey.
-Final PDF Drive URL: pending.
+Final report: add the separately published PDF link before submission; the PDF is not in the current repository.
+If the form requires a Drive URL, upload the local PDF and verify public Viewer sharing.
 
 ## Complete list of working features
 
@@ -94,8 +95,9 @@ docs/verification.md. The dedicated acceptance run passed 34 existing isolated
 journeys: seven onboarding/access, ten genuinely distinct source-change/revocation,
 five interruption positions and twelve practical-transfer role flows. Tests use
 owned SQLite fixtures and mocked GitHub; no model call or production mutation.
-The latest full backend run passed 228 tests with 90% coverage, including 15 real
-PostgreSQL concurrent transaction cases in isolated loopback QA schemas. An
+The latest full backend run passed 239 tests, including 17 real PostgreSQL cases
+in isolated loopback QA schemas. Previous measured coverage was 89%; this newer
+run did not collect fresh coverage. An
 invitation revocation race was reproduced and corrected; duplicate actions,
 source changes and recipient access loss are checked against real database locks.
 Frontend lint,
@@ -108,6 +110,12 @@ A separate 60-document internal holdout (34 prose) passed candidate precision/re
 the submitted thresholds on the bounded set. Its frozen initial run is preserved;
 labels are internal and implementation-informed, not independent enterprise
 accuracy evidence. Original development fixtures remain separate.
+
+Further judge-input fixes were assessed on another frozen 60-document first
+run: precision 100%, recall 96.2%, owners 95%, rationales 91.7% and dependencies
+100%, with two preserved misses. No independent-label claim is made. Live
+authenticated GitHub sync imported 40 sources from our own public repository;
+incremental resync added no new sources. Temporary verification access was revoked.
 
 A new 72-document all-prose challenge first measured precision 94.6%, recall
 88.3%, owners 84.6%, rationales 75.0% and dependencies 83.3%. The first-run report
@@ -150,11 +158,14 @@ A separate local toy-service exercise was actually run: a failed release was det
 
 ## Final regression checks
 
-210 backend tests passed with 90% line coverage; 14 judge/onboarding/source and
-nine chat browser tests passed. Three affected source-change/revocation UI checks
-passed again after the final backend change. Lint/typecheck/build, Python/Node
-dependency audits and credential-pattern review passed in the documented scope.
-See verification.md for bounded accessibility and test/setup limitations.
+The latest full backend suite passed 239 tests; previous measured line coverage
+was 89%. Exact-three
+acceptance passed 34/34 again on 14 November. Earlier judge/onboarding/source and
+chat browser tests are dated separately in verification.md. New closure readiness,
+changed/failed evidence, cooldown/retry and onboarding UI checks passed. Build,
+lint/typecheck, dependency audits and credential-pattern review passed in the
+documented scope. Automated accessibility is bounded; no external user study is
+claimed.
 
 ## What does not work yet
 
